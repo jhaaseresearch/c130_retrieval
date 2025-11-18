@@ -10,8 +10,6 @@ OUTPUT:
 - new directory in "1_complete", titled "YYYY-MM-DD_STORM_TAIL"
 - in this new directory, the .SUM, *.25_, and expanded .tgz files will be copied over.
 
-to work on: if there are two ARO files with .25_ and .25_.A, only .25_.A file gets transfered.
-
 CONVENTION
 
 # local path to google drive 2025 NHOP folder
