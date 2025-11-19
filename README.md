@@ -21,5 +21,4 @@
 ## Source
 
 - **Author**: Kelly Loo, kloo@ucsd.edu
-- **Date modified**: 2025-11-18
 - **Date created**: 2025-11-18
