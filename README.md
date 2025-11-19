@@ -1,4 +1,6 @@
 ## Script descriptions
+Before using any of the scripts, open the code to check that the paths are accurate to the campaign you are working on!!
+
 - `c130toags.sh`: Copies sbf from agsd to /ags/data/hiaper/* and 1-second data to /ags/products/hiaper/*/c130-insitu_usaf
 - `completeflights.sh`: Checks if flight data exists, and copies the necessary files to agsd if it does
 - `dailystorm.sh`: Archives Tropical Tidbits track and intensity forecast, and NHC cone projection. The active storms have to be updated almost daily. Intended to be used during hurricane season.
