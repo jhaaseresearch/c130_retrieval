@@ -53,7 +53,7 @@ elif [[ $year == "2025" ]]; then
     cd "$HOME/ags/projects/hiaper/code_kloo"
 
     pythonfilename=()
-    for line in $(cat newfilenametc25.txt);do 
+    for line in $(cat newfilename.txt);do 
         pythonfilename+=("$line") # .txt file to list
     done
 
