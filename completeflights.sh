@@ -88,9 +88,9 @@ fi
 cd "$gdrive_path"/"$month"*/*"$mission"*
 if [ -e *.tgz ]; then
     echo ".tgz file exists."
-    mkdir "$dropbox_path/$filename"/tgz_folder
-    cp *.tgz "$dropbox_path/$filename/tgz_folder"
-    cd "$dropbox_path/$filename/tgz_folder"
+    mkdir "$dropbox_path/$filename"/tgz_folder_to_delete
+    cp *.tgz "$dropbox_path/$filename/tgz_folder_to_delete"
+    cd "$dropbox_path/$filename/tgz_folder_to_delete"
     tar -xzf *.tgz
     for file in *.txt; do
         mv "$file" "${file/\Data\\\\/}"

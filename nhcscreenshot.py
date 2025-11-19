@@ -14,7 +14,7 @@ epac_url = "https://www.nhc.noaa.gov/?epac"
 cpac_url = "https://www.nhc.noaa.gov/?cpac"
 atlantic_url = "https://www.nhc.noaa.gov/?atl"
 
-# folder to save files
+# folder to save files, change the path name to yours!!
 nhc_dropbox_path="/Users/kyloo/agsd Dropbox/agsd's shared workspace/data_temp/tc25_usaf_aro/screenshot_nhc/"
 os.chdir(nhc_dropbox_path)
 today=datetime.today().strftime('%Y-%m-%d')
