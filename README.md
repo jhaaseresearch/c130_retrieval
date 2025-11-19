@@ -1,4 +1,4 @@
-## Scripts
+## Script descriptions
 - `c130toags.sh`: Copies sbf from agsd to /ags/data/hiaper/* and 1-second data to /ags/products/hiaper/*/c130-insitu_usaf
 - `completeflights.sh`: Checks if flight data exists, and copies the necessary files to agsd if it does
 - `dailystorm.sh`: Archives Tropical Tidbits track and intensity forecast, and NHC cone projection. The active storms have to be updated almost daily. Intended to be used during hurricane season.
@@ -12,6 +12,19 @@
   `podnhc.sh`: Archives NHC plan of the day.
 
   `ttscreenshot.py`: Archives Tropical Tidbit recon flight dropsonde screenshots, then renames the files to indicate the time it was saved.
+
+## To create a cronjob:
+```bash
+$ crontab -e
+```
+with the convention
+```bash
+min hour day_of_month month day_of_week link_to_file
+```
+so an example of running `podnhc.sh` at 11am (local time) everyday
+```bash
+00 11 * * * /Users/kyloo/c130_retrieval/podnhc.sh > /dev/null
+```
 
 ## Source
 
