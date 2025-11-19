@@ -2,18 +2,18 @@
 
 : <<'CONVENTION'
 This code moves the necessary data files from the 53rd Google Drive to agsd dropbox.
-When expanding the .tgz file, the time files are renamed to comply with dropbox naming conventions.
+When expanding the .tgz file, the time files are renamed to comply with Dropbox naming conventions.
 
 INPUT: Flight date, storm name, tail number, and mission ID.
 
 OUTPUT:
 - new directory in "1_complete", titled "YYYY-MM-DD_STORM_TAIL"
 - in this new directory, the .SUM, *.25_, and expanded .tgz files will be copied over.
-
+- there will be a directory "tgz_folder_to_delete", feel free to remove this file, it is not needed.
 CONVENTION
 
 # # change the following
-# local path to google drive 2025 NHOP folder
+# local path to google drive usaf ops folder
 gdrive_path="$HOME/Library/CloudStorage/GoogleDrive-kloo@ucsd.edu/.shortcut-targets-by-id/1_L7QmkPn1WUVfeTuCeB04HKaOsed07O2/1 - 2025 Data/NHOP"
 # local path to agsd's shared workspace
 dropbox_path="$HOME/agsd Dropbox/agsd's shared workspace/data_temp/tc25_usaf_aro/1_complete"
